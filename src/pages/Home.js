@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 function Home() {
-  const API_KEY = 'AIzaSyCY98Sel-zV5nYbRKPJwgN1XaWM7nmv6fM';
+  const API_KEY = process.env.REACT_APP_API_KEY;
   const [url, setUrl] = useState('');
   const [metrics, setMetrics] = useState(null);
   const [error, setError] = useState(null);
